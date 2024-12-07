@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Our Cause</title>
+    <link rel="stylesheet" href="HomeStyles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/Logo_2_BW.PNG" alt="Project Demeter Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">What We Do</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="donations.html">Donations</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets\Photo_Jason_Houston_American_Forests.jpg" alt="Support Our Cause" class="hero-image">
+        <div class="hero-card">
+            <h2>Make a Difference</h2>
+            <p>Your contributions help us create a lasting impact.</p>
+            <a href="donations.html" class="button">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section id="events">
+            <div id="events-container">
+                <h2>Conservation Events</h2>
+                <div id="location-search">
+                    <input type="text" id="location-input" placeholder="Enter a location">
+                    <button onclick="searchByLocation()">Search</button>
+                </div>
+                <ul id="events-list"></ul>
+                <div id="pagination">
+                    <button onclick="loadPreviousPage()">Previous</button>
+                    <button onclick="loadNextPage()">Next</button>
+                </div>
+            </div>
+        </section>
+        <script src="events.js"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Social:</p>
+                <div class="social">
+                    <a href="#"><img src="assets/Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/Tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="assets/Linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/twitter (x).png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <img src="assets/Logo_2.png" alt="Project Demeter Logo">
+            </div>
+            <div class="footer-right">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Statement</a>
+                <a href="#">Charity Disclosure</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Project Demeter 2024</p>
+        </div>
+    </footer>
+    <script src="HomeScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Our Cause</title>
+    <link rel="stylesheet" href="HomeStyles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/Logo_2_BW.PNG" alt="Project Demeter Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">What We Do</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="donations.html">Donations</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets\Birch trees.webp" alt="Support Our Cause" class="hero-image">
+        <div class="hero-card">
+            <h2>Make a Difference</h2>
+            <p>Your contributions help us create a lasting impact.</p>
+            <a href="#donation-options" class="button">Donate Now</a>
+        </div>
+    </section>
+
+    <main class="donation-form">
+        <section class="choose-donation">
+            <h2>1. Choose your donation</h2>
+            <div class="donation-options">
+                <div class="donation-type button-group">
+                    <h3>I'd like to give</h3>
+                    <div class="buttons">
+                        <button class="active">One-Time</button>
+                        <button>Monthly</button>
+                        <div class="highlight"></div>
+                    </div>
+                </div>
+                <div class="donation-as button-group">
+                    <h3>I'm donating as</h3>
+                    <div class="buttons">
+                        <button class="active">An individual</button>
+                        <button>A company</button>
+                        <div class="highlight"></div>
+                    </div>
+                </div>
+                <div class="donation-amount amount-group">
+                    <h3>Amount</h3>
+                    <div class="buttons">
+                        <button class="amount active">$25</button>
+                        <button class="amount">$50</button>
+                        <button class="amount">$75</button>
+                        <button class="amount">$100</button>
+                        <input type="text" placeholder="$ Other" class="other-amount">
+                        <div class="highlight"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <section class="donor-information">
+        <h2>2. Donor information</h2>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" placeholder="First name">
+            </div>
+            <div class="form-field">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" placeholder="Last name">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="form-field">
+                <label for="mobile">Mobile (optional)</label>
+                <input type="tel" id="mobile" placeholder="000-000-0000 (optional)">
+            </div>
+        </div>
+    </section>
+       
+    <section class="billing-information">
+        <h2>3. Billing information</h2>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="" disabled selected>Country</option>
+                    <option value="us">United States</option>
+                    <option value="pa">Panama</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="address-1">Address 1</label>
+                <input type="text" id="address-1" placeholder="Address 1">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="address-2">Address 2</label>
+                <input type="text" id="address-2" placeholder="Address 2">
+            </div>
+            <div class="form-field">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-method">
+        <h2>4. Payment method</h2>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="cardholder-name">Cardholder Name</label>
+                <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+            </div>
+            <div class="form-field">
+                <label for="card-number">Credit Card Number</label>
+                <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="ccv">
+                    Credit Card Verification Value 
+                </label>                
+                <input type="password" id="ccv" placeholder="***">
+                <span class="tooltip-trigger" tabindex="0">What is a CVV number?
+                    <div class="tooltip">
+                        The CCV is a 3- or 4-digit number typically located on the back of your card.
+                    </div>
+                </span>
+            </div>
+            <div class="form-field">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="month" id="expiration-date" required min="2024-12">
+            </div>
+        </div>
+    </section>
+    <div class="button-container">
+        <button class="donate-button">Donate</button>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Social:</p>
+                <div class="social">
+                    <a href="#"><img src="assets/Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/Tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="assets/Linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/twitter (x).png" alt="X"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <img src="assets/Logo_2.png" alt="Project Demeter Logo">
+            </div>
+            <div class="footer-right">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Statement</a>
+                <a href="#">Charity Disclosure</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Project Demeter 2024</p>
+        </div>
+    </footer>
+    <script src="HomeScript.js"></script>
+</body>
+</html>
